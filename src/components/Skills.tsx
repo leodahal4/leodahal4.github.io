@@ -13,39 +13,39 @@ interface SkillCategory {
 
 const skillsData: SkillCategory[] = [
   {
-    id: "frontend",
-    name: "Frontend",
+    id: "languages",
+    name: "Programming Languages",
     skills: [
-      { name: "React", level: 95 },
-      { name: "JavaScript", level: 95 },
-      { name: "TypeScript", level: 90 },
-      { name: "HTML/CSS", level: 90 },
-      { name: "Vue.js", level: 80 },
-      { name: "Angular", level: 75 },
+      { name: "Golang", level: 95 },
+      { name: "Python", level: 90 },
+      { name: "JavaScript", level: 85 },
+      { name: "TypeScript", level: 80 },
+      { name: "PHP", level: 75 },
+      { name: "Java", level: 75 },
+    ],
+  },
+  {
+    id: "devops",
+    name: "DevOps & Cloud",
+    skills: [
+      { name: "Docker", level: 95 },
+      { name: "Kubernetes", level: 90 },
+      { name: "AWS", level: 85 },
+      { name: "GCP", level: 85 },
+      { name: "CI/CD", level: 90 },
+      { name: "Terraform", level: 85 },
     ],
   },
   {
     id: "backend",
-    name: "Backend",
+    name: "Backend & Databases",
     skills: [
-      { name: "Node.js", level: 90 },
-      { name: "Express", level: 90 },
-      { name: "Python", level: 85 },
-      { name: "Django", level: 80 },
-      { name: "Java", level: 75 },
-      { name: "PHP", level: 70 },
-    ],
-  },
-  {
-    id: "database",
-    name: "Database & DevOps",
-    skills: [
-      { name: "MongoDB", level: 90 },
-      { name: "PostgreSQL", level: 85 },
-      { name: "MySQL", level: 85 },
-      { name: "Docker", level: 80 },
-      { name: "AWS", level: 80 },
-      { name: "CI/CD", level: 75 },
+      { name: "REST APIs", level: 95 },
+      { name: "gRPC", level: 90 },
+      { name: "PostgreSQL", level: 90 },
+      { name: "GORM", level: 85 },
+      { name: "RabbitMQ", level: 80 },
+      { name: "Redis", level: 85 },
     ],
   },
 ];
@@ -116,7 +116,7 @@ const Skills = () => {
           <div className="max-w-3xl mx-auto mb-16 text-center">
             <h2 className="section-title">Technical Skills</h2>
             <p className="section-subtitle mx-auto">
-              A comprehensive overview of my technical expertise across various domains and technologies.
+              A comprehensive overview of my technical expertise across backend development, DevOps, and cloud technologies.
             </p>
           </div>
 
@@ -187,9 +187,9 @@ const Skills = () => {
               <h3 className="text-lg font-medium mb-4">Additional Technologies & Tools</h3>
               <div className="flex flex-wrap justify-center gap-2">
                 {[
-                  "Git", "Redux", "GraphQL", "REST API", "Webpack", 
-                  "Jest", "Mocha", "SCSS", "TailwindCSS", "Firebase", 
-                  "Netlify", "Vercel", "Redis", "Elasticsearch"
+                  "Helm", "HashiCorp Vault", "Tekton", "KubeVela", "Serverless", 
+                  "Azure", "Celery", "Keycloak", "Grafana", "Prometheus", 
+                  "TDD", "GoMock", "PyTest", "Ginkgo", "Linux"
                 ].map((skill) => (
                   <span
                     key={skill}

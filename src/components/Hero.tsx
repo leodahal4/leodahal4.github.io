@@ -51,17 +51,17 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center">
           <div className="inline-block mb-4 animate-fade-in opacity-0" style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}>
             <span className="px-3 py-1 text-sm font-medium rounded-full bg-secondary text-muted-foreground">
-              Senior Developer with 6+ Years Experience
+              Backend Developer & DevOps Engineer with 6+ Years Experience
             </span>
           </div>
           
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-bold tracking-tight mb-6 animate-fade-in opacity-0" style={{ animationDelay: '0.4s', animationFillMode: 'forwards' }}>
-            <span className="block">Crafting Digital</span>
-            <span className="block">Experiences with Code</span>
+            <span className="block">Building Scalable</span>
+            <span className="block">Cloud-Native Solutions</span>
           </h1>
           
           <p className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto animate-fade-in opacity-0" style={{ animationDelay: '0.6s', animationFillMode: 'forwards' }}>
-            I'm a senior developer passionate about creating elegant solutions to complex problems. With over 6 years of experience, I specialize in building high-performance applications.
+            I'm a specialized backend developer and DevOps engineer with expertise in Golang, Python, Kubernetes, and cloud platforms. I focus on creating high-performance, scalable applications and optimizing infrastructure.
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 animate-fade-in opacity-0" style={{ animationDelay: '0.8s', animationFillMode: 'forwards' }}>

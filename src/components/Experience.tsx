@@ -6,6 +6,7 @@ interface ExperienceItem {
   id: string;
   role: string;
   company: string;
+  location: string;
   period: string;
   description: string[];
   technologies: string[];
@@ -14,42 +15,55 @@ interface ExperienceItem {
 const experienceData: ExperienceItem[] = [
   {
     id: "exp1",
-    role: "Senior Full Stack Developer",
-    company: "TechInnovate Solutions",
-    period: "2021 - Present",
+    role: "Senior Software Engineer",
+    company: "BerryBytes",
+    location: "Kathmandu, Nepal",
+    period: "06/2023 - Present",
     description: [
-      "Led a team of 5 developers in building enterprise-level web applications for financial sector clients",
-      "Architected and implemented microservices-based infrastructure that improved system reliability by 40%",
-      "Established CI/CD pipelines and reduced deployment times by 60%",
-      "Mentored junior developers and conducted technical interviews for new hires"
+      "Leading the design and development of Kubernetes-based Platform-as-a-Service (PaaS), optimizing cloud-native app deployment",
+      "Designing high-performance, scalable web applications, focusing on system optimization and performance improvements",
+      "Conducting comprehensive code reviews, collaborating with QA teams to ensure quality, and participating in product releases",
+      "Key Projects: 01Cloud (PaaS for seamless deployment of cloud-native applications) and ComputeSphere (multi-region cloud hosting platform)"
     ],
-    technologies: ["React", "Node.js", "TypeScript", "AWS", "Docker", "MongoDB"]
+    technologies: ["Golang", "Kubernetes", "Docker", "AWS", "GCP", "CI/CD", "Terraform"]
   },
   {
     id: "exp2",
-    role: "Full Stack Developer",
-    company: "Digital Creators Inc.",
-    period: "2019 - 2021",
+    role: "Developer & Sys. Admin",
+    company: "Ayata Incorporation",
+    location: "Kathmandu, Nepal",
+    period: "06/2020 - 06/2023",
     description: [
-      "Developed and maintained multiple client web applications using React and Node.js",
-      "Integrated third-party APIs for payment processing and analytics",
-      "Optimized database queries resulting in 35% performance improvement",
-      "Collaborated with design team to implement responsive UI/UX improvements"
+      "Led initiatives using Java, Golang, and Python for scalable application development",
+      "Optimized database queries, improving performance and efficiency across multiple deployments",
+      "Participated in Agile processes, code reviews, and deployments for multiple projects",
+      "Key Project: Avyaas - Developed a scalable backend for an e-learning platform supporting 100K+ users"
     ],
-    technologies: ["React", "Node.js", "Express", "PostgreSQL", "Redis", "AWS"]
+    technologies: ["Java", "Golang", "Python", "PostgreSQL", "REST APIs", "Docker"]
   },
   {
     id: "exp3",
-    role: "Frontend Developer",
-    company: "WebSolutions Group",
-    period: "2017 - 2019",
+    role: "Backend Developer",
+    company: "Omniblue Technology",
+    location: "Kathmandu, Nepal",
+    period: "02/2019 - 06/2020",
     description: [
-      "Built responsive, cross-browser compatible web interfaces for e-commerce clients",
-      "Implemented state management using Redux for complex application states",
-      "Worked with RESTful APIs to integrate data from multiple sources",
-      "Participated in daily Scrum meetings and sprint planning"
+      "Engineered web applications with scalable REST APIs and optimized backend services",
+      "Worked on integrating backend functionalities using Java, ensuring system reliability and performance"
     ],
-    technologies: ["JavaScript", "React", "Redux", "HTML5", "CSS3", "Sass"]
+    technologies: ["Java", "REST APIs", "Backend Services"]
+  },
+  {
+    id: "exp4",
+    role: "Frontend Developer (Internship)",
+    company: "UniTech Solution",
+    location: "Damak, Nepal",
+    period: "02/2018 - 11/2018",
+    description: [
+      "Developed responsive user interfaces using HTML, CSS, and JavaScript",
+      "Integrated backend services via REST APIs"
+    ],
+    technologies: ["HTML", "CSS", "JavaScript", "REST APIs"]
   }
 ];
 
@@ -91,7 +105,7 @@ const Experience = () => {
           <div className="max-w-3xl mx-auto mb-16 text-center">
             <h2 className="section-title">Work Experience</h2>
             <p className="section-subtitle mx-auto">
-              Over 6 years of professional experience working across different technologies and domains.
+              Over 6 years of professional experience specializing in backend development, DevOps, and cloud-native solutions.
             </p>
           </div>
 
@@ -129,7 +143,7 @@ const Experience = () => {
                           : "text-muted-foreground"
                       )}
                     >
-                      {item.company}
+                      {item.company} · {item.location}
                     </div>
                   </button>
                 ))}
@@ -152,7 +166,7 @@ const Experience = () => {
                     <div className="mb-6">
                       <h3 className="text-xl font-bold">{item.role}</h3>
                       <div className="text-muted-foreground">
-                        {item.company} · {item.period}
+                        {item.company} · {item.location} · {item.period}
                       </div>
                     </div>
 
