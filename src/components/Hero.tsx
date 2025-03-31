@@ -49,14 +49,6 @@ const Hero = () => {
       
       <div className="container-width relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="mb-8 animate-fade-in opacity-0" style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}>
-            <img 
-              src="/lovable-uploads/4a2511a2-3133-4569-a166-f620d864fae6.png" 
-              alt="Mousam Dahal" 
-              className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover mx-auto border-4 border-primary/20 shadow-xl"
-            />
-          </div>
-          
           <div className="inline-block mb-4 animate-fade-in opacity-0" style={{ animationDelay: '0.4s', animationFillMode: 'forwards' }}>
             <span className="px-3 py-1 text-sm font-medium rounded-full bg-secondary text-muted-foreground">
               Backend Developer & DevOps Engineer with 6+ Years Experience

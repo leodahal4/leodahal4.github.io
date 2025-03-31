@@ -1,8 +1,6 @@
 
 # Mousam Dahal - Backend Developer & DevOps Engineer
 
-![Mousam Dahal](./public/lovable-uploads/4a2511a2-3133-4569-a166-f620d864fae6.png)
-
 ## Professional Profile
 
 I'm a specialized backend developer and DevOps engineer with 6+ years of experience in creating high-performance, scalable applications and optimizing infrastructure. My expertise includes:
