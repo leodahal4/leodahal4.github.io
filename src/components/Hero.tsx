@@ -49,22 +49,30 @@ const Hero = () => {
       
       <div className="container-width relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="inline-block mb-4 animate-fade-in opacity-0" style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}>
+          <div className="mb-8 animate-fade-in opacity-0" style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}>
+            <img 
+              src="/lovable-uploads/4a2511a2-3133-4569-a166-f620d864fae6.png" 
+              alt="Mousam Dahal" 
+              className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover mx-auto border-4 border-primary/20 shadow-xl"
+            />
+          </div>
+          
+          <div className="inline-block mb-4 animate-fade-in opacity-0" style={{ animationDelay: '0.4s', animationFillMode: 'forwards' }}>
             <span className="px-3 py-1 text-sm font-medium rounded-full bg-secondary text-muted-foreground">
               Backend Developer & DevOps Engineer with 6+ Years Experience
             </span>
           </div>
           
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-bold tracking-tight mb-6 animate-fade-in opacity-0" style={{ animationDelay: '0.4s', animationFillMode: 'forwards' }}>
-            <span className="block">Building Scalable</span>
-            <span className="block">Cloud-Native Solutions</span>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-bold tracking-tight mb-6 animate-fade-in opacity-0" style={{ animationDelay: '0.6s', animationFillMode: 'forwards' }}>
+            <span className="block">Mousam Dahal</span>
+            <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-muted-foreground mt-2">Building Scalable Cloud-Native Solutions</span>
           </h1>
           
-          <p className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto animate-fade-in opacity-0" style={{ animationDelay: '0.6s', animationFillMode: 'forwards' }}>
+          <p className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto animate-fade-in opacity-0" style={{ animationDelay: '0.8s', animationFillMode: 'forwards' }}>
             I'm a specialized backend developer and DevOps engineer with expertise in Golang, Python, Kubernetes, and cloud platforms. I focus on creating high-performance, scalable applications and optimizing infrastructure.
           </p>
           
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 animate-fade-in opacity-0" style={{ animationDelay: '0.8s', animationFillMode: 'forwards' }}>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 animate-fade-in opacity-0" style={{ animationDelay: '1s', animationFillMode: 'forwards' }}>
             <a
               href="#projects"
               className="w-full sm:w-auto px-8 py-3 rounded-full bg-primary text-primary-foreground font-medium transition-all hover:bg-primary/90 hover:-translate-y-0.5 hover:shadow-lg active:translate-y-0 active:shadow-none"

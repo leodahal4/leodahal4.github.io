@@ -1,69 +1,65 @@
-# Welcome to your Lovable project
 
-## Project info
+# Mousam Dahal - Backend Developer & DevOps Engineer
 
-**URL**: https://lovable.dev/projects/d1ce7b57-a50c-405e-bf7e-7c3796c15541
+![Mousam Dahal](./public/lovable-uploads/4a2511a2-3133-4569-a166-f620d864fae6.png)
 
-## How can I edit this code?
+## Professional Profile
 
-There are several ways of editing your application.
+I'm a specialized backend developer and DevOps engineer with 6+ years of experience in creating high-performance, scalable applications and optimizing infrastructure. My expertise includes:
 
-**Use Lovable**
+- **Languages**: Golang, Python, JavaScript/TypeScript
+- **Cloud Platforms**: AWS, GCP, Azure
+- **Containerization**: Docker, Kubernetes
+- **CI/CD**: Jenkins, GitHub Actions, GitLab CI
+- **Infrastructure as Code**: Terraform, Ansible
+- **Monitoring**: Prometheus, Grafana, ELK Stack
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/d1ce7b57-a50c-405e-bf7e-7c3796c15541) and start prompting.
+## Featured Projects
 
-Changes made via Lovable will be committed automatically to this repo.
+### Pre-commit Automation Tool
+A utility tool that simplifies Git workflow by automating pre-commit tasks.
+[GitHub Repository](https://github.com/leodahal4/precommit-util)
 
-**Use your preferred IDE**
+### ClusterManager
+A Kubernetes management solution for simplifying cluster operations.
+[GitHub Repository](https://github.com/leodahal4/ClusterManager)
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Developer Toolkit (In Progress)
+A comprehensive set of tools designed to streamline the development workflow.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Migrate Tracker (Todo)
+A tool for tracking and managing database migrations across different environments.
 
-Follow these steps:
+## How to Run This Portfolio
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
+# Clone the repository
 git clone <YOUR_GIT_URL>
 
-# Step 2: Navigate to the project directory.
+# Navigate to the project directory
 cd <YOUR_PROJECT_NAME>
 
-# Step 3: Install the necessary dependencies.
+# Install dependencies
 npm i
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start the development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## Contact Information
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+- **Email**: mousam.dahal4@gmail.com
+- **LinkedIn**: [Mousam Dahal](https://www.linkedin.com/in/mousam-dahal-19a770167/)
 
-**Use GitHub Codespaces**
+## Deployment
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+This portfolio is automatically deployed to GitHub Pages using GitHub Actions workflow. Each push to the main branch triggers a new deployment.
 
-## What technologies are used for this project?
-
-This project is built with .
+## Technologies Used
 
 - Vite
 - TypeScript
 - React
 - shadcn-ui
 - Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/d1ce7b57-a50c-405e-bf7e-7c3796c15541) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+- Formspree for contact form handling
