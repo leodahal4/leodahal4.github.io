@@ -10,6 +10,7 @@ interface Project {
   technologies: string[];
   link: string;
   github?: string;
+  status?: "Completed" | "In Progress";
 }
 
 const projectsData: Project[] = [
@@ -20,7 +21,8 @@ const projectsData: Project[] = [
     image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
     technologies: ["Golang", "Git", "CI/CD", "DevOps", "Code Quality"],
     link: "#",
-    github: "https://github.com/leodahal4"
+    github: "https://github.com/leodahal4/precommit-util",
+    status: "Completed"
   },
   {
     id: "project2",
@@ -29,7 +31,8 @@ const projectsData: Project[] = [
     image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
     technologies: ["Kubernetes", "Golang", "Operators", "Cloud-Native", "Multi-tenancy"],
     link: "#",
-    github: "https://github.com/leodahal4"
+    github: "https://github.com/leodahal4/ClusterManager",
+    status: "Completed"
   },
   {
     id: "project3",
@@ -38,7 +41,8 @@ const projectsData: Project[] = [
     image: "https://images.unsplash.com/photo-1607799279861-4dd421887fb3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
     technologies: ["Golang", "CLI", "Kubernetes", "DevOps", "Developer Tools"],
     link: "#",
-    github: "https://github.com/leodahal4"
+    github: "https://github.com/leodahal4",
+    status: "In Progress"
   },
   {
     id: "project4",
@@ -47,7 +51,8 @@ const projectsData: Project[] = [
     image: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
     technologies: ["Golang", "GORM", "PostgreSQL", "Database Migrations", "ORM"],
     link: "#",
-    github: "https://github.com/leodahal4"
+    github: "https://github.com/leodahal4",
+    status: "In Progress"
   }
 ];
 
@@ -112,6 +117,17 @@ const Projects = () => {
                     style={{ backgroundImage: `url(${project.image})` }}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  
+                  {project.status && (
+                    <div className={cn(
+                      "absolute top-3 right-3 px-3 py-1 rounded-full text-xs font-medium",
+                      project.status === "Completed" 
+                        ? "bg-green-500 text-white" 
+                        : "bg-amber-500 text-white"
+                    )}>
+                      {project.status}
+                    </div>
+                  )}
                 </div>
                 <div className="p-6">
                   <h3 className="text-lg font-bold mb-2">{project.title}</h3>
@@ -165,19 +181,19 @@ const Projects = () => {
                 <ul className="space-y-3">
                   <li className="flex items-start">
                     <div className="flex-shrink-0 h-1.5 w-1.5 rounded-full bg-primary mt-2 mr-3"></div>
-                    <p>"Building a GRPC Micro-Service in Go: A Comprehensive Guide" - <span className="text-muted-foreground">Medium (Feb 2023), 6.8K views</span></p>
+                    <p>"Building a GRPC Micro-Service in Go: A Comprehensive Guide" - <span className="text-muted-foreground">Medium (Feb 2023), 6.8K+ views</span></p>
                   </li>
                   <li className="flex items-start">
                     <div className="flex-shrink-0 h-1.5 w-1.5 rounded-full bg-primary mt-2 mr-3"></div>
-                    <p>"Handle Errors In Go Like A Pro." - <span className="text-muted-foreground">Medium (May 2023), 13.9K views</span></p>
+                    <p>"Handle Errors In Go Like A Pro." - <span className="text-muted-foreground">Medium (May 2023), 13.9K+ views</span></p>
                   </li>
                   <li className="flex items-start">
                     <div className="flex-shrink-0 h-1.5 w-1.5 rounded-full bg-primary mt-2 mr-3"></div>
-                    <p>"Between Returning and Interfaces in Go" - <span className="text-muted-foreground">Medium (July 2023), 7.8K views</span></p>
+                    <p>"Between Returning and Interfaces in Go" - <span className="text-muted-foreground">Medium (July 2023), 7.8K+ views</span></p>
                   </li>
                   <li className="flex items-start">
                     <div className="flex-shrink-0 h-1.5 w-1.5 rounded-full bg-primary mt-2 mr-3"></div>
-                    <p>"Package Organization in Go" - <span className="text-muted-foreground">Medium (Sept 2023), 2.6K views</span></p>
+                    <p>"Package Organization in Go" - <span className="text-muted-foreground">Medium (Sept 2023), 2.6K+ views</span></p>
                   </li>
                 </ul>
               </div>

@@ -38,7 +38,7 @@ const Navbar = () => {
           href="#hero"
           className="text-xl font-display font-bold tracking-tight"
         >
-          Leo Dahal
+          Mousam Dahal
         </a>
 
         {/* Desktop Navigation */}
